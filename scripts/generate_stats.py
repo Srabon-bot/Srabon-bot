@@ -7,7 +7,6 @@ Outputs, all sharing one visual language with ascii.svg (the portrait):
   stats.svg   hero total + weekly sparkline
   streak.svg  current and longest streak
   langs.svg   top languages, by bytes and by repo count
-  year.svg    the year as a character map, in the portrait's own ramp
 
 Every file uses the portrait's grey ink, a monospace face, a transparent
 background, and the same left-to-right clipPath reveal with a cursor riding
@@ -94,9 +93,7 @@ def font_head():
 
 WIDTH = 620            # every graphic shares one column width
 LEFT = 34              # shared left inset, so stacked blocks line up
-                       # (year.svg needs it for the weekday gutter)
 REVEAL = 1.30          # seconds; matches the portrait's cadence
-RAMP = [" ", ":", "+", "#", "@"]      # steps of the portrait's own ramp
 MON = ["jan", "feb", "mar", "apr", "may", "jun",
        "jul", "aug", "sep", "oct", "nov", "dec"]
 
@@ -372,77 +369,6 @@ def draw_heading(word):
     return "".join(p)
 
 
-def draw_year(s):
-    """Seven rows by fifty-three weeks, intensity as a character."""
-    FS, LH, COLW = 9.2, 11.0, 2
-    CW = FS * 0.6
-    pad_l, pad_t = LEFT, 44
-    weeks = s["weeks"]
-    ncols = len(weeks) * COLW
-    H = int(pad_t + 7 * LH + 26)
-
-    def level(v):
-        for i, cut in enumerate((0, 2, 5, 9)):
-            if v <= cut:
-                return i
-        return 4
-
-    p = [head(WIDTH, H)]
-    p.append(f'<g opacity="0">{fade(0.10)}'
-             + label(pad_l, 16, "THE YEAR", 9, "m-f",
-                     extra=' letter-spacing="1.3"')
-             + label(pad_l, 32, f"{s['active']} of "
-                     f"{sum(len(w) for w in weeks)} days had a contribution", 11)
-             + '</g>')
-
-    # ramp legend, so the encoding is never carried by shade alone
-    lx = WIDTH - 6
-    p.append(f'<g opacity="0">{fade(1.30)}'
-             + label(lx - 78, 32, "less", 9, "m-f", "end")
-             + f'<text xml:space="preserve" x="{lx - 72}" y="32" class="d-f" '
-             f'font-size="{FS}">{" ".join(RAMP[1:])}</text>'
-             + label(lx, 32, "more", 9, "m-f", "end") + '</g>')
-
-    for r in range(7):
-        chars = []
-        for w in weeks:
-            day = next((d for d in w if d.get("weekday") == r), None)
-            v = day["contributionCount"] if day else 0
-            chars.append(RAMP[level(v)] * COLW)
-        line = "".join(chars).rstrip()
-        if not line:
-            continue
-        y = pad_t + r * LH
-        w_px = max(len(line), 1) * CW
-        cid = f"ry{r}"
-        delay = 0.30 + r * 0.07
-        p.append(f'<clipPath id="{cid}"><rect x="{pad_l}" y="{y}" '
-                 f'height="{LH}" width="0"><animate attributeName="width" '
-                 f'from="0" to="{w_px:.1f}" begin="{delay:.2f}s" dur="0.40s" '
-                 f'fill="freeze"/></rect></clipPath>')
-        safe = line.replace("&", "&amp;").replace("<", "&lt;")
-        p.append(f'<g clip-path="url(#{cid})"><text xml:space="preserve" '
-                 f'x="{pad_l}" y="{y + FS - 0.6:.1f}" class="d-f" '
-                 f'font-size="{FS}">{safe}</text></g>')
-
-    for r, lab in ((1, "mon"), (3, "wed"), (5, "fri")):
-        p.append(label(pad_l - 7, pad_t + r * LH + FS - 0.6, lab, 9, "m-f",
-                       "end"))
-
-    last_m, last_x = None, -999.0
-    base_y = pad_t + 7 * LH + 13
-    for i, w in enumerate(weeks):
-        m = int(w[0]["date"][5:7])
-        x = pad_l + i * COLW * CW
-        if m != last_m and i < len(weeks) - 1 and x - last_x >= 34:
-            p.append(label(x, base_y, MON[m - 1], 9, "m-f"))
-            last_x = x
-        last_m = m
-
-    p.append("</svg>")
-    return "".join(p)
-
-
 # ---------------------------------------------------------------- main
 
 def write(path, svg):
@@ -466,7 +392,7 @@ def main():
 
     s = summarise(fetch(login, token))
     files = {"stats.svg": draw_stats(s), "streak.svg": draw_streak(s),
-             "langs.svg": draw_langs(s), "year.svg": draw_year(s)}
+             "langs.svg": draw_langs(s)}
     for word in ("stats",):
         files[f"hd-{word.replace(' ', '-')}.svg"] = draw_heading(word)
 
