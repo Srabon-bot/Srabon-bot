@@ -20,6 +20,8 @@
      free shared pin API 503s under load (it did, the day these were added).
      These sit immediately above GitHub's own Pinned grid, refreshed daily
      by the same workflow that draws stats.svg. -->
+<img src="./hd-projects.svg" width="620" alt="Highlighted ML Projects"/>
+
 <table align="center">
   <tr>
     <td>

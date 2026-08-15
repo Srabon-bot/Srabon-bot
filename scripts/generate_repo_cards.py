@@ -33,11 +33,26 @@ FEATURED = [
 
 GAP = 20
 CARD_W = (gs.WIDTH - GAP) / 2      # two columns inside the shared column width
-CARD_H = 112
+CARD_H = 84                         # name + up to 2 description lines, no footer
 
 
 def esc(text):
     return (text or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
+def heading(text):
+    """Same look as gs.draw_heading (mono label + hairline rule to the edge),
+    but embeds font_text() instead of font_head() -- font_head is a subset
+    deliberately trimmed to only the letters "stats" uses, and this heading
+    needs the rest of the alphabet."""
+    FS, H = 16, 26
+    text_end = len(text) * FS * 0.6 + 18
+    p = [gs.head(gs.WIDTH, H, font=gs.font_text())]
+    p.append(gs.label(0, 18, text, FS, "e-f", extra=' font-weight="600"'))
+    p.append(f'<line x1="{text_end:.0f}" y1="12.5" x2="{gs.WIDTH}" y2="12.5" '
+              f'class="u-s" stroke-width="1"/>')
+    p.append("</svg>")
+    return "".join(p)
 
 
 def fetch_repo(login, name, token):
@@ -74,8 +89,6 @@ def fit(text, font_size, max_w=CARD_W - 32):
 def draw_card(repo, delay):
     name = esc(fit(repo["name"], 13))
     desc_lines = [esc(l) for l in wrap_desc(repo.get("description") or "")]
-    lang = esc(repo.get("language") or "")
-    stars, forks = repo.get("stargazers_count", 0), repo.get("forks_count", 0)
 
     p = [gs.head(CARD_W, CARD_H)]
     p.append(f'<rect x="0.5" y="0.5" width="{CARD_W - 1:.1f}" height="{CARD_H - 1}" '
@@ -86,9 +99,6 @@ def draw_card(repo, delay):
     for i, line in enumerate(desc_lines):
         p.append(f'<g opacity="0">{gs.fade(delay + 0.12 + i * 0.05)}'
                  + gs.label(16, 47 + i * 15, line, 11) + '</g>')
-    foot = [w for w in (lang, f"{stars} stars", f"{forks} forks") if w]
-    p.append(f'<g opacity="0">{gs.fade(delay + 0.24)}'
-             + gs.label(16, CARD_H - 16, "   ".join(foot), 10.5) + '</g>')
     p.append("</svg>")
     return "".join(p)
 
@@ -99,14 +109,16 @@ def main():
     out_dir = os.environ.get("OUT_DIR", ".")
 
     changed = []
+    if gs.write(os.path.join(out_dir, "hd-projects.svg"),
+                heading("Highlighted ML Projects")):
+        changed.append("hd-projects.svg")
+
     for i, (name, slug) in enumerate(FEATURED):
         repo = fetch_repo(login, name, token)
         path = os.path.join(out_dir, f"card-{slug}.svg")
         if gs.write(path, draw_card(repo, delay=0.08 * i)):
             changed.append(os.path.basename(path))
-        print(f"{name}: {repo.get('language')}, "
-              f"{repo.get('stargazers_count', 0)} stars, "
-              f"{repo.get('forks_count', 0)} forks")
+        print(f"{name}: {repo.get('description')!r}")
     print("updated: " + (", ".join(sorted(changed)) if changed else "nothing"))
 
 
