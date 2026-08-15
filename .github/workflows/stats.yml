@@ -27,9 +27,15 @@ jobs:
           GH_LOGIN: ${{ github.repository_owner }}
         run: python3 scripts/generate_stats.py
 
+      - name: Draw the featured-repo cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_LOGIN: ${{ github.repository_owner }}
+        run: python3 scripts/generate_repo_cards.py
+
       - name: Commit whatever changed
         run: |
-          FILES="stats.svg streak.svg langs.svg hd-*.svg"
+          FILES="stats.svg streak.svg langs.svg hd-*.svg card-*.svg"
           if [ -z "$(git status --porcelain -- $FILES)" ]; then
             echo "no change"
             exit 0

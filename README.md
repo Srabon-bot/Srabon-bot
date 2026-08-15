@@ -16,42 +16,32 @@
 
 </div>
 
-<!-- These render as native-style pin cards immediately above GitHub's own
-     Pinned repositories grid, so together they read as one continuous set. -->
+<!-- Self-hosted, same as the graphics above -- github-readme-stats.vercel.app's
+     free shared pin API 503s under load (it did, the day these were added).
+     These sit immediately above GitHub's own Pinned grid, refreshed daily
+     by the same workflow that draws stats.svg. -->
 <table align="center">
   <tr>
     <td>
       <a href="https://github.com/Srabon-bot/Bangladesh-flood-data-set">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=Srabon-bot&repo=Bangladesh-flood-data-set&theme=dark" />
-          <img src="https://github-readme-stats.vercel.app/api/pin/?username=Srabon-bot&repo=Bangladesh-flood-data-set&theme=default" />
-        </picture>
+        <img src="./card-flood-dataset.svg" width="300" alt="Bangladesh-flood-data-set" />
       </a>
     </td>
     <td>
       <a href="https://github.com/Srabon-bot/Discharge-forecaster-model-for-Bangladesh">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=Srabon-bot&repo=Discharge-forecaster-model-for-Bangladesh&theme=dark" />
-          <img src="https://github-readme-stats.vercel.app/api/pin/?username=Srabon-bot&repo=Discharge-forecaster-model-for-Bangladesh&theme=default" />
-        </picture>
+        <img src="./card-discharge-forecaster.svg" width="300" alt="Discharge-forecaster-model-for-Bangladesh" />
       </a>
     </td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/Srabon-bot/Bangladesh-flood-risk-classifier-model">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=Srabon-bot&repo=Bangladesh-flood-risk-classifier-model&theme=dark" />
-          <img src="https://github-readme-stats.vercel.app/api/pin/?username=Srabon-bot&repo=Bangladesh-flood-risk-classifier-model&theme=default" />
-        </picture>
+        <img src="./card-flood-risk-classifier.svg" width="300" alt="Bangladesh-flood-risk-classifier-model" />
       </a>
     </td>
     <td>
       <a href="https://github.com/Srabon-bot/Bangladesh-flood-susceptibility">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=Srabon-bot&repo=Bangladesh-flood-susceptibility&theme=dark" />
-          <img src="https://github-readme-stats.vercel.app/api/pin/?username=Srabon-bot&repo=Bangladesh-flood-susceptibility&theme=default" />
-        </picture>
+        <img src="./card-flood-susceptibility.svg" width="300" alt="Bangladesh-flood-susceptibility" />
       </a>
     </td>
   </tr>
