@@ -32,8 +32,9 @@ CHAR_W = 7.74                # 0.600 em at FONT_SIZE -- keep these in step,
 FONT_SIZE = 12.9             # see embed_portrait_font.py
 LINE_H = 15
 ROW_DELAY = 0.09             # per-row stagger during the type-in, seconds
-BREATHE_DUR = 3.6            # seconds per inhale-exhale cycle, once typed
-BREATHE_MIN = 0.82           # opacity at the bottom of the breath
+BREATHE_DUR = 6.0            # seconds per full breath, once typed -- symmetric,
+                              # same pace fading out as coming back
+BREATHE_MIN = 0.12           # opacity at the bottom -- barely visible, not gone
 FAMILY = "ui-monospace,SFMono-Regular,Menlo,Consolas,monospace"
 
 
@@ -90,6 +91,8 @@ def build_svg(lines, cols=None, breathe_dur=BREATHE_DUR, breathe_min=BREATHE_MIN
     # the reveal reads as one continuous gesture rather than two effects
     type_done = len(lines) * ROW_DELAY
 
+    # symmetric: the dip sits at the midpoint, so fading out and coming back
+    # both take exactly half the cycle at the same ease-in-out pace
     style = (f'.a{{fill:{FG_LIGHT}}}'
              f'@media(prefers-color-scheme:dark){{.a{{fill:{FG_DARK}}}}}'
              f'.breathe{{animation:breathe {breathe_dur}s ease-in-out '
@@ -137,9 +140,9 @@ def main():
     ap.add_argument("--shear", type=float, default=0.22,
                      help="synthetic italic slant, 0 for upright")
     ap.add_argument("--breathe-dur", type=float, default=BREATHE_DUR,
-                     help="seconds per breathing cycle, once typed")
+                     help="seconds per full breath, once typed")
     ap.add_argument("--breathe-min", type=float, default=BREATHE_MIN,
-                     help="opacity at the bottom of the breath, 0-1")
+                     help="opacity at the bottom of the dip, 0-1")
     ap.add_argument("--preview", action="store_true")
     args = ap.parse_args()
 
@@ -149,8 +152,8 @@ def main():
         print("\n".join(lines))
 
     with open(args.out, "w", encoding="utf-8") as f:
-        f.write(build_svg(lines, cols=args.cols,
-                           breathe_dur=args.breathe_dur, breathe_min=args.breathe_min))
+        f.write(build_svg(lines, cols=args.cols, breathe_dur=args.breathe_dur,
+                           breathe_min=args.breathe_min))
     print(f"wrote {args.out} -- {len(lines)} rows, {args.cols} columns, "
           f"typing {len(lines) * ROW_DELAY:.2f}s then breathing every "
           f"{args.breathe_dur:.1f}s")
