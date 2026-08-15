@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """Turn a photo into ascii.svg — a self-typing, monochrome ASCII portrait.
 
-This is the generator that produces the portrait at the top of the README.
-Run it once; it is not on a schedule, unlike scripts/generate_stats.py.
+The README currently shows a wordmark instead (see make_wordmark.py, the
+live generator for ascii.svg); this is what drew the original face portrait
+and is kept for whenever it swaps back. Run it once; it is not on a
+schedule, unlike scripts/generate_stats.py.
 
     pip install pillow numpy opencv-python-headless rembg onnxruntime
     python3 scripts/make_portrait.py photo.png --crop 400,110,910,790
