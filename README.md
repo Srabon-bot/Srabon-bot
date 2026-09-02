@@ -1,12 +1,10 @@
 <div align="center">
 
-<!-- ░░ ANIMATED ASCII BANNER — acts as the profile banner ░░ -->
-<img src="./ascii.svg" width="520" alt="Srabon"/>
+<!-- ░░ ANIMATED ASCII BANNER — name ░░ -->
+<img src="./ascii.svg" width="620" alt="Shahriar Srabon"/>
 
-<br/>
-
-<!-- ░░ ANIMATED NAME + DESIGNATION BANNER ░░ -->
-<img src="./name-banner.svg" width="620" alt="Shahriar Srabon — Web Developer · ML Engineer"/>
+<!-- ░░ ANIMATED ASCII BANNER — designation ░░ -->
+<img src="./designation.svg" width="520" alt="Web Developer · ML Engineer"/>
 
 <!-- Typing animation tagline via shields/readme-typing-svg -->
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&pause=1000&color=6E7681&center=true&vCenter=true&width=520&lines=Building+for+the+web+%F0%9F%8C%90;Training+models+that+actually+work+%F0%9F%A4%96;Exploring+ML+%26+Deep+Learning+%F0%9F%A7%A0;Open+to+collaboration+%F0%9F%A4%9D)](https://git.io/typing-svg)
