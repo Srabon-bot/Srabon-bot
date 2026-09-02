@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- ░░ ANIMATED ASCII BANNER — name ░░ -->
-<img src="./ascii.svg" width="620" alt="Shahriar Srabon"/>
+<img src="" width="620" alt="Shahriar Srabon"/>
 
 <!-- ░░ ANIMATED ASCII BANNER — designation ░░ -->
 <img src="./designation.svg" width="520" alt="Web Developer · ML Engineer"/>
