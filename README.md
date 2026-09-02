@@ -1,6 +1,84 @@
 <div align="center">
 
-<img src="./ascii.svg" width="460" alt="Srabon"/>
+<!-- ░░ ANIMATED ASCII BANNER — acts as the profile banner ░░ -->
+<img src="./ascii.svg" width="520" alt="Srabon"/>
+
+<br/>
+
+<!-- Name & Designation -->
+### Shahriar Srabon
+**Web Developer · ML Engineer**
+
+<!-- Typing animation tagline via shields/readme-typing-svg -->
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&pause=1000&color=6E7681&center=true&vCenter=true&width=520&lines=Building+for+the+web+%F0%9F%8C%90;Training+models+that+actually+work+%F0%9F%A4%96;Exploring+ML+%26+Deep+Learning+%F0%9F%A7%A0;Open+to+collaboration+%F0%9F%A4%9D)](https://git.io/typing-svg)
+
+<br/>
+
+> *"Neural nets are not 'just curve fitting'. They are 'just' curve fitting."*
+> — **Andrej Karpathy**
+
+</div>
+
+---
+
+## 👋 About Me
+
+Hi! I'm **Shahriar Srabon**, a passionate developer and researcher focused on **Web Development**, **Machine Learning**, and **Data Science**. I enjoy working on real-world problems — especially in hydrology, environmental science, and intelligent systems.
+
+- 🔭 Currently working on **flood risk prediction models for Bangladesh**
+- 🌱 Exploring **Next.js** and modern full-stack web development
+- 🧠 Researching **deep learning approaches** for hydrological forecasting
+- 🛠️ Building a **tourism website** with interactive features
+- 💡 Interested in **open-source contributions** and collaborative research
+- 📍 Based in **Bangladesh**
+- 📬 Reach me at: **your.email@example.com**
+
+---
+
+## 🛠️ Skills & Technologies
+
+<div align="center">
+
+**Languages**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+
+**Machine Learning & Data Science**
+
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+
+**Web Development**
+
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+**Tools & Platforms**
+
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+
+</div>
+
+---
+
+## 📊 Stats
+
+<div align="center">
 
 <img src="./stats.svg" width="620" alt="Contributions in the last year"/>
 
@@ -16,10 +94,10 @@
 
 </div>
 
-<!-- Self-hosted, same as the graphics above -- github-readme-stats.vercel.app's
-     free shared pin API 503s under load (it did, the day these were added).
-     These sit immediately above GitHub's own Pinned grid, refreshed daily
-     by the same workflow that draws stats.svg. -->
+---
+
+## 📌 Highlighted Projects
+
 <img src="./hd-projects.svg" width="620" alt="Highlighted ML Projects"/>
 
 <table align="center">
@@ -48,3 +126,25 @@
     </td>
   </tr>
 </table>
+
+---
+
+## 🤝 Connect With Me
+
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/YOUR_LINKEDIN)
+[![Twitter](https://img.shields.io/badge/Twitter-1D9BF0?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/YOUR_TWITTER)
+[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://facebook.com/YOUR_FACEBOOK)
+[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Srabon-bot)
+
+</div>
+
+---
+
+<div align="center">
+
+*Profile stats auto-refresh daily via GitHub Actions · SVGs rendered with JetBrains Mono*
+
+</div>
