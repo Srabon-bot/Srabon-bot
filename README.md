@@ -1,9 +1,9 @@
 <div align="center">
 
 <!-- ░░ ANIMATED ASCII BANNER — name ░░ -->
-<img src="ascii.svg" width="620" alt="Shahriar Srabon"/>
+<img src="ascii.svg" width="100%" alt="Shahriar Srabon"/>
 <!-- ░░ ANIMATED ASCII BANNER — designation ░░ -->
-<img src="./designation.svg" width="520" alt="Web Developer · ML Engineer"/>
+<img src="./designation.svg" width="100%" alt="Web Developer · ML Engineer"/>
 
 <!-- Typing animation tagline via shields/readme-typing-svg -->
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&pause=1000&color=6E7681&center=true&vCenter=true&width=520&lines=Building+for+the+web+%F0%9F%8C%90;Training+models+that+actually+work+%F0%9F%A4%96;Exploring+ML+%26+Deep+Learning+%F0%9F%A7%A0;Open+to+collaboration+%F0%9F%A4%9D)](https://git.io/typing-svg)
@@ -26,7 +26,7 @@ Hi! I'm **Shahriar Srabon**, a passionate developer and researcher focused on **
 - 🧠 Researching **deep learning approaches** for hydrological forecasting
 - 🛠️ Building a **Portfolio** with interactive features
 - 💡 Interested in **open-source contributions** and collaborative research
-- 📍 Based in **Bangladesh**
+- 📍 Based in **Dhaka, Bangladesh**
 - 📬 Reach me at: **srabon361@gmail.com**
 
 ---
@@ -37,39 +37,39 @@ Hi! I'm **Shahriar Srabon**, a passionate developer and researcher focused on **
 
 **Languages**
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)](https://en.cppreference.com/w/c)
+[![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)](https://en.cppreference.com/w/cpp)
+[![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
 
 **Machine Learning & Data Science**
 
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
 
 **Web Development**
 
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+[![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 
 **Tools & Platforms**
 
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
+[![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)](https://code.visualstudio.com/)
+[![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com/)
+[![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://www.linux.org/)
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
 
 </div>
 
@@ -79,17 +79,13 @@ Hi! I'm **Shahriar Srabon**, a passionate developer and researcher focused on **
 
 <div align="center">
 
-<img src="./stats.svg" width="620" alt="Contributions in the last year"/>
+<img src="./stats.svg" width="100%" alt="Contributions in the last year"/>
 
-</div>
+<img src="./hd-stats.svg" width="100%" alt="stats"/>
 
-<img src="./hd-stats.svg" width="620" alt="stats"/>
+<img src="./streak.svg" width="100%" alt="Current and longest streak"/>
 
-<div align="center">
-
-<img src="./streak.svg" width="620" alt="Current and longest streak"/>
-
-<img src="./langs.svg" width="620" alt="Top languages by bytes and by repo"/>
+<img src="./langs.svg" width="100%" alt="Top languages by bytes and by repo"/>
 
 </div>
 
@@ -97,34 +93,25 @@ Hi! I'm **Shahriar Srabon**, a passionate developer and researcher focused on **
 
 ## 📌 Highlighted Projects
 
-<img src="./hd-projects.svg" width="620" alt="Highlighted ML Projects"/>
+<div align="center">
 
-<table align="center">
-  <tr>
-    <td>
-      <a href="https://github.com/Srabon-bot/Bangladesh-flood-data-set">
-        <img src="./card-flood-dataset.svg" width="300" alt="Bangladesh-flood-data-set" />
-      </a>
-    </td>
-    <td>
-      <a href="https://github.com/Srabon-bot/Discharge-forecaster-model-for-Bangladesh">
-        <img src="./card-discharge-forecaster.svg" width="300" alt="Discharge-forecaster-model-for-Bangladesh" />
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/Srabon-bot/Bangladesh-flood-risk-classifier-model">
-        <img src="./card-flood-risk-classifier.svg" width="300" alt="Bangladesh-flood-risk-classifier-model" />
-      </a>
-    </td>
-    <td>
-      <a href="https://github.com/Srabon-bot/Bangladesh-flood-susceptibility">
-        <img src="./card-flood-susceptibility.svg" width="300" alt="Bangladesh-flood-susceptibility" />
-      </a>
-    </td>
-  </tr>
-</table>
+<img src="./hd-projects.svg" width="100%" alt="Highlighted ML Projects"/>
+
+<a href="https://github.com/Srabon-bot/Bangladesh-flood-data-set">
+  <img src="./card-flood-dataset.svg" width="49%" alt="Bangladesh-flood-data-set" />
+</a>
+<a href="https://github.com/Srabon-bot/Discharge-forecaster-model-for-Bangladesh">
+  <img src="./card-discharge-forecaster.svg" width="49%" alt="Discharge-forecaster-model-for-Bangladesh" />
+</a>
+
+<a href="https://github.com/Srabon-bot/Bangladesh-flood-risk-classifier-model">
+  <img src="./card-flood-risk-classifier.svg" width="49%" alt="Bangladesh-flood-risk-classifier-model" />
+</a>
+<a href="https://github.com/Srabon-bot/Bangladesh-flood-susceptibility">
+  <img src="./card-flood-susceptibility.svg" width="49%" alt="Bangladesh-flood-susceptibility" />
+</a>
+
+</div>
 
 ---
 
@@ -134,9 +121,8 @@ Hi! I'm **Shahriar Srabon**, a passionate developer and researcher focused on **
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shahriar-hossain-b0589a402/)
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/its_srabon_here_/)
-[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)]([https://facebook.com/YOUR_FACEBOOK](https://www.facebook.com/shahriar.srabon.14145/))
+[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/shahriar.srabon.14145/)
 [![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:srabon361@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Srabon-bot)
 
 </div>
-
