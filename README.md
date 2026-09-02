@@ -5,9 +5,8 @@
 
 <br/>
 
-<!-- Name & Designation -->
-### Shahriar Srabon
-**Web Developer · ML Engineer**
+<!-- ░░ ANIMATED NAME + DESIGNATION BANNER ░░ -->
+<img src="./name-banner.svg" width="620" alt="Shahriar Srabon — Web Developer · ML Engineer"/>
 
 <!-- Typing animation tagline via shields/readme-typing-svg -->
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&pause=1000&color=6E7681&center=true&vCenter=true&width=520&lines=Building+for+the+web+%F0%9F%8C%90;Training+models+that+actually+work+%F0%9F%A4%96;Exploring+ML+%26+Deep+Learning+%F0%9F%A7%A0;Open+to+collaboration+%F0%9F%A4%9D)](https://git.io/typing-svg)
@@ -45,6 +44,7 @@ Hi! I'm **Shahriar Srabon**, a passionate developer and researcher focused on **
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
 **Machine Learning & Data Science**
@@ -63,6 +63,7 @@ Hi! I'm **Shahriar Srabon**, a passionate developer and researcher focused on **
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 
 **Tools & Platforms**
 
@@ -71,6 +72,7 @@ Hi! I'm **Shahriar Srabon**, a passionate developer and researcher focused on **
 ![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
 </div>
 
@@ -133,18 +135,11 @@ Hi! I'm **Shahriar Srabon**, a passionate developer and researcher focused on **
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/YOUR_LINKEDIN)
-[![Twitter](https://img.shields.io/badge/Twitter-1D9BF0?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/YOUR_TWITTER)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shahriar-hossain-b0589a402/)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/its_srabon_here_/)
 [![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://facebook.com/YOUR_FACEBOOK)
-[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@gmail.com)
+[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:srabon361@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Srabon-bot)
 
 </div>
 
----
-
-<div align="center">
-
-*Profile stats auto-refresh daily via GitHub Actions · SVGs rendered with JetBrains Mono*
-
-</div>
