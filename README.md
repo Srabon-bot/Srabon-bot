@@ -8,10 +8,12 @@
   To switch: comment out the block you don't want, uncomment the other.
 -->
 
-<!-- ░░ MODE 0: ANIMATED ASCII BANNER ░░
+<!-- 
+░░ MODE 0: ANIMATED ASCII BANNER ░░
 <img src="ascii.svg" width="100%" alt="Shahriar Srabon"/>
 <img src="./designation.svg" width="100%" alt="Web Developer · ML Engineer"/>
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&pause=1000&color=6E7681&center=true&vCenter=true&width=520&lines=Building+for+the+web+%F0%9F%8C%90;Training+models+that+actually+work+%F0%9F%A4%96;Exploring+ML+%26+Deep+Learning+%F0%9F%A7%A0;Open+to+collaboration+%F0%9F%A4%9D)](https://git.io/typing-svg)-->
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&pause=1000&color=6E7681&center=true&vCenter=true&width=520&lines=Building+for+the+web+%F0%9F%8C%90;Training+models+that+actually+work+%F0%9F%A4%96;Exploring+ML+%26+Deep+Learning+%F0%9F%A7%A0;Open+to+collaboration+%F0%9F%A4%9D)](https://git.io/typing-svg)
+-->
 
 
 <!-- ░░ MODE 1: IMAGE BANNER ░░ -->
