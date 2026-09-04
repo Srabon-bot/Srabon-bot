@@ -96,6 +96,8 @@ Hi! I'm **Shahriar Srabon**, a passionate developer and researcher focused on **
 
 <img src="./langs.svg" width="100%" alt="Top languages by bytes and by repo"/>
 
+<img src="./visits.svg" width="100%" alt="Profile views and unique visitors, last 14 days"/>
+
 </div>
 
 ---
