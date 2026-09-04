@@ -24,6 +24,7 @@ jobs:
       - name: Draw the stat graphics
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TRAFFIC_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
           GH_LOGIN: ${{ github.repository_owner }}
         run: python3 scripts/generate_stats.py
 
@@ -35,7 +36,7 @@ jobs:
 
       - name: Commit whatever changed
         run: |
-          FILES="stats.svg streak.svg langs.svg hd-*.svg card-*.svg"
+          FILES="stats.svg streak.svg langs.svg visits.svg hd-*.svg card-*.svg"
           if [ -z "$(git status --porcelain -- $FILES)" ]; then
             echo "no change"
             exit 0
