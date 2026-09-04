@@ -177,6 +177,24 @@ def languages(repos):
     return rank(by_size), rank(by_repo)
 
 
+def fetch_traffic(login, token):
+    """Views over the trailing 14 days — the only window GitHub retains.
+
+    Needs push access to the repo, which the default Actions GITHUB_TOKEN
+    doesn't have (traffic sits behind the same permission as Insights).
+    Pass a PAT — classic with `repo` scope, or fine-grained with
+    `Administration: Read-only` — as TRAFFIC_TOKEN.
+    """
+    headers = {"Authorization": f"bearer {token}",
+               "Accept": "application/vnd.github+json",
+               "User-Agent": f"{login}-profile-stats"}
+    req = urllib.request.Request(
+        f"https://api.github.com/repos/{login}/{login}/traffic/views",
+        headers=headers)
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return json.load(r)
+
+
 def summarise(user):
     cal = user["contributionsCollection"]["contributionCalendar"]
     weeks = [w["contributionDays"] for w in cal["weeks"]]
@@ -311,6 +329,26 @@ def draw_streak(s):
     return "".join(p)
 
 
+def draw_visits(v):
+    """Total and unique profile views, from the repo's own traffic window."""
+    H = 96
+    total, uniques = v.get("count", 0), v.get("uniques", 0)
+    p = [head(WIDTH, H)]
+    mid = WIDTH / 2
+    p.append(f'<line x1="{mid:.0f}" y1="16" x2="{mid:.0f}" y2="80" '
+             f'class="u-s" stroke-width="1" opacity="0">{fade(0.20)}</line>')
+    cells = [(total, "profile views", "last 14 days"),
+             (uniques, "unique visitors", "last 14 days")]
+    for i, (val, lab, span) in enumerate(cells):
+        x = LEFT if i == 0 else mid + LEFT
+        p.append(f'<g opacity="0">{fade(0.12 + i * 0.14)}'
+                 + label(x, 44, f"{val}", 34, "e-f", extra=' font-weight="600"')
+                 + label(x, 64, lab, 11)
+                 + label(x, 80, span, 10) + '</g>')
+    p.append("</svg>")
+    return "".join(p)
+
+
 def draw_langs(s):
     """Two small charts: share of bytes, and count of repos by main language."""
     rows = max(len(s["by_size"]), len(s["by_repo"]), 1)
@@ -393,6 +431,14 @@ def main():
     s = summarise(fetch(login, token))
     files = {"stats.svg": draw_stats(s), "streak.svg": draw_streak(s),
              "langs.svg": draw_langs(s)}
+
+    traffic_token = os.environ.get("TRAFFIC_TOKEN")
+    if traffic_token:
+        try:
+            files["visits.svg"] = draw_visits(fetch_traffic(login, traffic_token))
+        except Exception as e:
+            print(f"traffic fetch failed, skipping visits.svg: {e}")
+
     for word in ("stats",):
         files[f"hd-{word.replace(' ', '-')}.svg"] = draw_heading(word)
 
