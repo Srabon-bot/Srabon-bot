@@ -111,37 +111,11 @@ Hi! I'm **Shahriar Srabon**, a full-stack developer who builds web apps from UI 
 
 ---
 
-## 📌 Highlighted Projects
-
-<div align="center">
-
-<img src="./hd-projects.svg" width="100%" alt="Highlighted ML Projects"/>
-
-<a href="https://github.com/Srabon-bot/Bangladesh-flood-data-set">
-  <img src="./card-flood-dataset.svg" width="49%" alt="Bangladesh-flood-data-set" />
-</a>
-<a href="https://github.com/Srabon-bot/Discharge-forecaster-model-for-Bangladesh">
-  <img src="./card-discharge-forecaster.svg" width="49%" alt="Discharge-forecaster-model-for-Bangladesh" />
-</a>
-
-<a href="https://github.com/Srabon-bot/Bangladesh-flood-risk-classifier-model">
-  <img src="./card-flood-risk-classifier.svg" width="49%" alt="Bangladesh-flood-risk-classifier-model" />
-</a>
-<a href="https://github.com/Srabon-bot/Bangladesh-flood-susceptibility">
-  <img src="./card-flood-susceptibility.svg" width="49%" alt="Bangladesh-flood-susceptibility" />
-</a>
-
-</div>
-
----
-
 ## 🤝 Connect With Me
 
 <div align="center">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shahriar-hossain-b0589a402/)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/its_srabon_here_/)
-[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/shahriar.srabon.14145/)
 [![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:srabon361@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Srabon-bot)
 
