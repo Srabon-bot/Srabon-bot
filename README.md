@@ -29,15 +29,18 @@
 
 ## 👋 About Me
 
-Hi! I'm **Shahriar Srabon**, a passionate developer and researcher focused on **Web Development**, **Machine Learning**, and **Data Science**. I enjoy working on real-world problems — especially in hydrology, environmental science, and intelligent systems.
+Hi! I'm **Shahriar Srabon**, a full-stack developer who builds web apps from UI to database, with a growing focus on **Machine Learning** and **Data Science**. I like working on real-world problems, especially in hydrology, environmental science, and intelligent systems.
 
-- 🔭 Currently working on **flood risk prediction models for Bangladesh**
-- 🌱 Exploring **Next.js** and modern full-stack web development
-- 🧠 Researching **deep learning approaches** for hydrological forecasting
-- 🛠️ Building a **Portfolio** with interactive features
+- 🌱 Building full-stack apps with **Next.js**, Node, and modern web tooling
+- 🧠 Exploring **deep learning** for hydrological forecasting and flood risk
 - 💡 Interested in **open-source contributions** and collaborative research
 - 📍 Based in **Dhaka, Bangladesh**
 - 📬 Reach me at: **srabon361@gmail.com**
+
+### 🔭 Currently working on
+
+<!--START-->
+<!--END-->
 
 ---
 
