@@ -21,8 +21,8 @@
 <br/>
 
 <!--QUOTE_START-->
-> *"Neural nets are not 'just curve fitting'. They are 'just' curve fitting."*
-> — **Andrej Karpathy**
+> *"The best way to predict the future is to invent it."*
+> — **Alan Kay**
 <!--QUOTE_END-->
 
 </div>
