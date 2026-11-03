@@ -21,8 +21,8 @@
 <br/>
 
 <!--QUOTE_START-->
-> *"The best way to predict the future is to invent it."*
-> — **Alan Kay**
+> *"Premature optimization is the root of all evil."*
+> — **Donald Knuth**
 <!--QUOTE_END-->
 
 </div>
