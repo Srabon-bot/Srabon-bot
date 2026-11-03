@@ -20,8 +20,10 @@
 -->
 <br/>
 
+<!--QUOTE_START-->
 > *"Neural nets are not 'just curve fitting'. They are 'just' curve fitting."*
 > — **Andrej Karpathy**
+<!--QUOTE_END-->
 
 </div>
 
