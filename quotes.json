@@ -1,0 +1,15 @@
+[
+  {"text": "Make it work, make it right, make it fast.", "author": "Kent Beck", "topic": "web"},
+  {"text": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.", "author": "Martin Fowler", "topic": "web"},
+  {"text": "Talk is cheap. Show me the code.", "author": "Linus Torvalds", "topic": "web"},
+  {"text": "Programs must be written for people to read, and only incidentally for machines to execute.", "author": "Harold Abelson", "topic": "web"},
+  {"text": "Simplicity is prerequisite for reliability.", "author": "Edsger W. Dijkstra", "topic": "web"},
+  {"text": "Premature optimization is the root of all evil.", "author": "Donald Knuth", "topic": "web"},
+  {"text": "Optimism is an occupational hazard of programming; feedback is the treatment.", "author": "Kent Beck", "topic": "web"},
+  {"text": "The Web as I envisaged it, we have not seen it yet. The future is still so much bigger than the past.", "author": "Tim Berners-Lee", "topic": "web"},
+  {"text": "Software is eating the world.", "author": "Marc Andreessen", "topic": "web"},
+  {"text": "Neural nets are not 'just curve fitting'. They are 'just' curve fitting.", "author": "Andrej Karpathy", "topic": "ml"},
+  {"text": "All models are wrong, but some are useful.", "author": "George E. P. Box", "topic": "ml"},
+  {"text": "Artificial intelligence is the new electricity.", "author": "Andrew Ng", "topic": "ml"},
+  {"text": "The best way to predict the future is to invent it.", "author": "Alan Kay", "topic": "ml"}
+]
