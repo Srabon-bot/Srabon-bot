@@ -21,8 +21,8 @@
 <br/>
 
 <!--QUOTE_START-->
-> *"Optimism is an occupational hazard of programming; feedback is the treatment."*
-> — **Kent Beck**
+> *"All models are wrong, but some are useful."*
+> — **George E. P. Box**
 <!--QUOTE_END-->
 
 </div>
