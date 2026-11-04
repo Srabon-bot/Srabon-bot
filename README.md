@@ -124,8 +124,6 @@ Hi! I'm **Shahriar Srabon**, a full-stack developer who builds web apps from UI 
 
 <img src="./visits.svg" width="100%" alt="Profile views and unique visitors, last 14 days"/>
 
-<img src="./visits.svg" width="100%" alt="Profile views and unique visitors, last 14 days"/>
-
 <img src="./coding-stats.svg" width="100%" alt="Coding stats"/>
 
 </div>
