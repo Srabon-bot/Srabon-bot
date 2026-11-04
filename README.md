@@ -37,6 +37,7 @@ Hi! I'm **Shahriar Srabon**, a full-stack developer who builds web apps from UI 
 - 🧠 Exploring **deep learning** for hydrological forecasting and flood risk
 - 💡 Interested in **open-source contributions** and collaborative research
 - 📍 Based in **Dhaka, Bangladesh**
+- 🌐 Portfolio: **[portfolio2-0-seven-liart.vercel.app](https://portfolio2-0-seven-liart.vercel.app/)**
 - 📬 Reach me at: **srabon361@gmail.com**
 
 ### 🔭 Currently working on
@@ -135,6 +136,7 @@ Hi! I'm **Shahriar Srabon**, a full-stack developer who builds web apps from UI 
 
 <div align="center">
 
+[![Portfolio](https://img.shields.io/badge/Portfolio-6E40C9?style=for-the-badge&logo=vercel&logoColor=white)](https://portfolio2-0-seven-liart.vercel.app/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shahriar-hossain-b0589a402/)
 [![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:srabon361@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Srabon-bot)
