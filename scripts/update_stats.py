@@ -9,6 +9,8 @@ import json
 import os
 import pathlib
 import sys
+import time
+import urllib.error
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
@@ -31,17 +33,34 @@ FONT_URLS = {
 }
 
 
-def gql(query, variables):
-    req = urllib.request.Request(
-        "https://api.github.com/graphql",
-        data=json.dumps({"query": query, "variables": variables}).encode(),
-        headers={"Authorization": f"Bearer {TOKEN}", "Content-Type": "application/json"},
-    )
-    with urllib.request.urlopen(req, timeout=60) as r:
-        data = json.load(r)
-    if "errors" in data:
-        sys.exit(f"GraphQL error: {data['errors']}")
-    return data["data"]
+def gql(query, variables, retries=5):
+    body = json.dumps({"query": query, "variables": variables}).encode()
+    for attempt in range(retries):
+        req = urllib.request.Request(
+            "https://api.github.com/graphql",
+            data=body,
+            headers={"Authorization": f"Bearer {TOKEN}", "Content-Type": "application/json"},
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                data = json.load(r)
+        except urllib.error.HTTPError as e:
+            if e.code in (500, 502, 503, 504) and attempt < retries - 1:
+                wait = 2 ** attempt * 3  # 3s, 6s, 12s, 24s
+                print(f"HTTP {e.code} from GitHub, retrying in {wait}s...")
+                time.sleep(wait)
+                continue
+            raise
+        except (urllib.error.URLError, TimeoutError) as e:
+            if attempt < retries - 1:
+                wait = 2 ** attempt * 3
+                print(f"Network error ({e}), retrying in {wait}s...")
+                time.sleep(wait)
+                continue
+            raise
+        if "errors" in data:
+            sys.exit(f"GraphQL error: {data['errors']}")
+        return data["data"]
 
 
 def font_css():
@@ -102,7 +121,7 @@ def fetch_lines(repos, user_id, starts):
     query($owner:String!,$name:String!,$since:GitTimestamp!,$author:ID!,$cursor:String){
       repository(owner:$owner,name:$name){
         defaultBranchRef{ target{ ... on Commit{
-          history(first:100,since:$since,author:{id:$author},after:$cursor){
+          history(first:50,since:$since,author:{id:$author},after:$cursor){
             pageInfo{ hasNextPage endCursor }
             nodes{ committedDate additions }
           }
