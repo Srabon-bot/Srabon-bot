@@ -4,6 +4,7 @@ Commits  = GitHub's own commit contribution count (same source as the profile gr
 Lines    = lines ADDED in your commits on each repo's default branch.
 Periods  = today / this week (Mon-Sun) / this month / this year, in TZ below.
 """
+import base64
 import json
 import os
 import pathlib
@@ -23,6 +24,12 @@ if not TOKEN or not LOGIN:
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
+# JetBrains Mono (latin subset), embedded into the SVG so it renders the same everywhere.
+FONT_URLS = {
+    400: "https://cdn.jsdelivr.net/fontsource/fonts/jetbrains-mono@latest/latin-400-normal.woff2",
+    600: "https://cdn.jsdelivr.net/fontsource/fonts/jetbrains-mono@latest/latin-600-normal.woff2",
+}
+
 
 def gql(query, variables):
     req = urllib.request.Request(
@@ -35,6 +42,23 @@ def gql(query, variables):
     if "errors" in data:
         sys.exit(f"GraphQL error: {data['errors']}")
     return data["data"]
+
+
+def font_css():
+    out = []
+    for weight, url in FONT_URLS.items():
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                b64 = base64.b64encode(r.read()).decode()
+            out.append(
+                "@font-face{font-family:JBMono;font-style:normal;"
+                f"font-weight:{weight};font-display:block;"
+                f"src:url(data:font/woff2;base64,{b64}) format('woff2')}}"
+            )
+        except Exception as e:  # falls back to the system monospace stack
+            print(f"warning: could not embed font weight {weight}: {e}")
+    return "".join(out)
 
 
 def iso(dt):
@@ -113,21 +137,17 @@ def fetch_lines(repos, user_id, starts):
 TEMPLATE = """<svg width="100%" viewBox="20 38 640 164" role="img" xmlns="http://www.w3.org/2000/svg">
   <title>Coding stats</title>
   <desc>Commits and lines coded for today, this week, this month and this year</desc>
-  <style>
-    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif; }
-    .line  { stroke: #d0d7de; }
-    .muted { fill: #59636e; }
-    .num   { fill: #0969da; }
-    .lines { fill: #1a7f37; }
+  <style>__FONTS__
+    text { font-family: JBMono, ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; }
+    .t    { fill: #424a53; }
+    .line { stroke: #d8dee4; }
     @media (prefers-color-scheme: dark) {
-      .line  { stroke: #30363d; }
-      .muted { fill: #8b949e; }
-      .num   { fill: #58a6ff; }
-      .lines { fill: #3fb950; }
+      .t    { fill: #f0f6fc; }
+      .line { stroke: #30363d; }
     }
   </style>
 
-  <text class="muted" x="636" y="52" font-size="11" text-anchor="end">updated __UPDATED__</text>
+  <text class="t" x="636" y="52" font-size="11" text-anchor="end">updated __UPDATED__</text>
 
   <line class="line" x1="190" y1="68" x2="190" y2="178"/>
   <line class="line" x1="350" y1="68" x2="350" y2="178"/>
@@ -137,11 +157,11 @@ __COLUMNS__
 </svg>
 """
 
-COLUMN = """  <text class="muted" x="{x}" y="88" font-size="12">{label}</text>
-  <text class="num" x="{x}" y="124" font-size="30" font-weight="500">{commits}</text>
-  <text class="muted" x="{x}" y="142" font-size="12">commits</text>
-  <text class="lines" x="{x}" y="168" font-size="16" font-weight="500">{lines}</text>
-  <text class="muted" x="{x}" y="186" font-size="12">lines coded</text>"""
+COLUMN = """  <text class="t" x="{x}" y="88" font-size="12">{label}</text>
+  <text class="t" x="{x}" y="124" font-size="30" font-weight="600">{commits}</text>
+  <text class="t" x="{x}" y="142" font-size="12">commits</text>
+  <text class="t" x="{x}" y="168" font-size="16" font-weight="600">{lines}</text>
+  <text class="t" x="{x}" y="186" font-size="12">lines coded</text>"""
 
 
 def render(commits, lines, now):
@@ -149,7 +169,8 @@ def render(commits, lines, now):
     for x, key, label in [(44, "today", "Today"), (204, "week", "This week"),
                           (364, "month", "This month"), (524, "year", "This year")]:
         cols.append(COLUMN.format(x=x, label=label, commits=f"{commits[key]:,}", lines=f"{lines[key]:,}"))
-    svg = TEMPLATE.replace("__COLUMNS__", "\n\n".join(cols))
+    svg = TEMPLATE.replace("__FONTS__", font_css())
+    svg = svg.replace("__COLUMNS__", "\n\n".join(cols))
     return svg.replace("__UPDATED__", now.strftime("%d %b %H:%M"))
 
 
