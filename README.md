@@ -21,8 +21,8 @@
 <br/>
 
 <!--QUOTE_START-->
-> *"Simplicity is prerequisite for reliability."*
-> — **Edsger W. Dijkstra**
+> *"The Web as I envisaged it, we have not seen it yet. The future is still so much bigger than the past."*
+> — **Tim Berners-Lee**
 <!--QUOTE_END-->
 
 </div>
