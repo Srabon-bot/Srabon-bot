@@ -21,8 +21,8 @@
 <br/>
 
 <!--QUOTE_START-->
-> *"The Web as I envisaged it, we have not seen it yet. The future is still so much bigger than the past."*
-> — **Tim Berners-Lee**
+> *"Premature optimization is the root of all evil."*
+> — **Donald Knuth**
 <!--QUOTE_END-->
 
 </div>
