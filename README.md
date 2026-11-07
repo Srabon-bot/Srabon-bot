@@ -21,8 +21,8 @@
 <br/>
 
 <!--QUOTE_START-->
-> *"Neural nets are not 'just curve fitting'. They are 'just' curve fitting."*
-> — **Andrej Karpathy**
+> *"All models are wrong, but some are useful."*
+> — **George E. P. Box**
 <!--QUOTE_END-->
 
 </div>
