@@ -21,8 +21,8 @@
 <br/>
 
 <!--QUOTE_START-->
-> *"The best way to predict the future is to invent it."*
-> — **Alan Kay**
+> *"The Web as I envisaged it, we have not seen it yet. The future is still so much bigger than the past."*
+> — **Tim Berners-Lee**
 <!--QUOTE_END-->
 
 </div>
