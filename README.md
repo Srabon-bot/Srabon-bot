@@ -21,8 +21,8 @@
 <br/>
 
 <!--QUOTE_START-->
-> *"All models are wrong, but some are useful."*
-> — **George E. P. Box**
+> *"The Web as I envisaged it, we have not seen it yet. The future is still so much bigger than the past."*
+> — **Tim Berners-Lee**
 <!--QUOTE_END-->
 
 </div>
