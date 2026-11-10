@@ -21,8 +21,8 @@
 <br/>
 
 <!--QUOTE_START-->
-> *"Premature optimization is the root of all evil."*
-> — **Donald Knuth**
+> *"Optimism is an occupational hazard of programming; feedback is the treatment."*
+> — **Kent Beck**
 <!--QUOTE_END-->
 
 </div>
