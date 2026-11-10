@@ -21,8 +21,8 @@
 <br/>
 
 <!--QUOTE_START-->
-> *"Software is eating the world."*
-> — **Marc Andreessen**
+> *"Premature optimization is the root of all evil."*
+> — **Donald Knuth**
 <!--QUOTE_END-->
 
 </div>
