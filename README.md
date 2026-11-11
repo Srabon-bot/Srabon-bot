@@ -43,11 +43,11 @@ Hi! I'm **Shahriar Srabon**, a full-stack developer who builds web apps from UI 
 ### 🔭 Currently working on
 
 <!--START-->
+- [BasketWise](https://github.com/Srabon-bot/BasketWise) - no description yet
 - [cnn-tictactoe-playground](https://github.com/Srabon-bot/cnn-tictactoe-playground) - no description yet
 - [wonderlast-server](https://github.com/Srabon-bot/wonderlast-server) - no description yet
 - [Wanderlast](https://github.com/Srabon-bot/Wanderlast) - A tour booking CRUD website
 - [portfolio](https://github.com/Srabon-bot/portfolio) - Dark purple full-stack MERN developer portfolio with a private admin dashboard. Built with Next.js, TypeScript, Tailwind, Express and MongoDB.
-- [ShomajShathi-app](https://github.com/Srabon-bot/ShomajShathi-app) - A civic events platform for organising and joining community service work in Dhaka. Create, join, and track cleanups, plantations, donation drives, and education circles. Built with Next.js 16, BetterAuth, and MongoDB.
 <!--END-->
 
 ---
