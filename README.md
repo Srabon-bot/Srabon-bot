@@ -21,8 +21,8 @@
 <br/>
 
 <!--QUOTE_START-->
-> *"All models are wrong, but some are useful."*
-> — **George E. P. Box**
+> *"Make it work, make it right, make it fast."*
+> — **Kent Beck**
 <!--QUOTE_END-->
 
 </div>
