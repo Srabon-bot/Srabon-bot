@@ -21,8 +21,8 @@
 <br/>
 
 <!--QUOTE_START-->
-> *"Software is eating the world."*
-> — **Marc Andreessen**
+> *"Programs must be written for people to read, and only incidentally for machines to execute."*
+> — **Harold Abelson**
 <!--QUOTE_END-->
 
 </div>
