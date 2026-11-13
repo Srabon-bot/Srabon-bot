@@ -43,11 +43,11 @@ Hi! I'm **Shahriar Srabon**, a full-stack developer who builds web apps from UI 
 ### 🔭 Currently working on
 
 <!--START-->
-- [BasketWise](https://github.com/Srabon-bot/BasketWise) - no description yet
+- [tasks](https://github.com/Srabon-bot/tasks) - Practice tasks i do everyday for web dev
+- [Aquaguard](https://github.com/Srabon-bot/Aquaguard) - ml,web,iot
+- [bdnews_site](https://github.com/Srabon-bot/bdnews_site) - no description yet
 - [cnn-tictactoe-playground](https://github.com/Srabon-bot/cnn-tictactoe-playground) - no description yet
-- [wonderlast-server](https://github.com/Srabon-bot/wonderlast-server) - no description yet
-- [Wanderlast](https://github.com/Srabon-bot/Wanderlast) - A tour booking CRUD website
-- [portfolio](https://github.com/Srabon-bot/portfolio) - Dark purple full-stack MERN developer portfolio with a private admin dashboard. Built with Next.js, TypeScript, Tailwind, Express and MongoDB.
+- [nextjs-with-typescript-project](https://github.com/Srabon-bot/nextjs-with-typescript-project) - no description yet
 <!--END-->
 
 ---
