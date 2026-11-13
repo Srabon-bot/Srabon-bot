@@ -21,8 +21,8 @@
 <br/>
 
 <!--QUOTE_START-->
-> *"Make it work, make it right, make it fast."*
-> — **Kent Beck**
+> *"Software is eating the world."*
+> — **Marc Andreessen**
 <!--QUOTE_END-->
 
 </div>
