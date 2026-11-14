@@ -21,8 +21,8 @@
 <br/>
 
 <!--QUOTE_START-->
-> *"Neural nets are not 'just curve fitting'. They are 'just' curve fitting."*
-> — **Andrej Karpathy**
+> *"Artificial intelligence is the new electricity."*
+> — **Andrew Ng**
 <!--QUOTE_END-->
 
 </div>
