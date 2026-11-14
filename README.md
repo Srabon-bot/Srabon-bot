@@ -21,8 +21,8 @@
 <br/>
 
 <!--QUOTE_START-->
-> *"Simplicity is prerequisite for reliability."*
-> — **Edsger W. Dijkstra**
+> *"Neural nets are not 'just curve fitting'. They are 'just' curve fitting."*
+> — **Andrej Karpathy**
 <!--QUOTE_END-->
 
 </div>
