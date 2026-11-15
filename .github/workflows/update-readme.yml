@@ -8,6 +8,11 @@ on:
 permissions:
   contents: write
 
+# Shared with the other README-writing jobs so their pushes can never race.
+concurrency:
+  group: profile-readme
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -15,10 +20,27 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Build recent repos list
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OWNER: ${{ github.repository_owner }}
         run: |
-          curl -s "https://api.github.com/users/${{ github.repository_owner }}/repos?sort=pushed&per_page=6" \
-            | jq -r '.[] | select(.name != "${{ github.repository_owner }}") | "- [\(.name)](\(.html_url)) - \(.description // "no description yet")"' \
-            | head -5 > list.md
+          set -euo pipefail
+          curl -fsS \
+            -H "Authorization: Bearer $GITHUB_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/users/$OWNER/repos?sort=pushed&per_page=10" > repos.json
+          # Authenticated so we are not at the mercy of the shared runner IP's
+          # 60/hour anonymous limit, but keep the list to PUBLIC repos: this
+          # README is public, so private repo names must not leak into it.
+          jq -r --arg owner "$OWNER" '
+            if type != "array" then error("unexpected GitHub API response") else . end
+            | map(select(.private == false and .name != $owner))
+            | .[0:5][]
+            | "- [\(.name)](\(.html_url)) - \(.description // "no description yet")"
+          ' repos.json > list.md
+          rm -f repos.json
+          # Never commit an empty section because of a transient API hiccup.
+          test -s list.md
 
       - name: Insert into README
         run: |
@@ -32,7 +54,8 @@ jobs:
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md
           git diff --cached --quiet || git commit -m "chore: update recent projects"
+          git pull --rebase
           git push
