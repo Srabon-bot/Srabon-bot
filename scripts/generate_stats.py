@@ -409,6 +409,12 @@ def draw_heading(word):
 
 # ---------------------------------------------------------------- main
 
+def warn(msg):
+    """Print a warning, as a GitHub Actions annotation when running in CI."""
+    print(f"warning: {msg}" if not os.environ.get("GITHUB_ACTIONS")
+          else f"::warning title=profile graphics::{msg}")
+
+
 def write(path, svg):
     old = ""
     if os.path.exists(path):
@@ -437,7 +443,11 @@ def main():
         try:
             files["visits.svg"] = draw_visits(fetch_traffic(login, traffic_token))
         except Exception as e:
-            print(f"traffic fetch failed, skipping visits.svg: {e}")
+            # Never fail the whole refresh over traffic, but don't freeze
+            # visits.svg silently either: surface it in the Actions log.
+            warn(f"traffic fetch failed, skipping visits.svg: {e}")
+    else:
+        warn("TRAFFIC_TOKEN is not set, leaving visits.svg untouched")
 
     for word in ("stats",):
         files[f"hd-{word.replace(' ', '-')}.svg"] = draw_heading(word)
