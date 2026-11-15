@@ -1,0 +1,54 @@
+name: Refresh profile graphics
+
+# Regenerates the stat graphics that the "Coding stats" job does not touch:
+# stats.svg, streak.svg, langs.svg, visits.svg, hd-stats.svg and the
+# featured-repo cards.
+#
+# Deliberately no `push` trigger: this job commits those files, and a push
+# trigger would make it re-run on its own commit.
+on:
+  schedule:
+    - cron: "17 5 * * *"   # once a day, off the hour to avoid the top-of-hour rush
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Shared with the other README-writing jobs so their pushes can never race.
+concurrency:
+  group: profile-readme
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Draw the stat graphics
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TRAFFIC_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
+          GH_LOGIN: ${{ github.repository_owner }}
+        run: python3 scripts/generate_stats.py
+
+      - name: Draw the featured-repo cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_LOGIN: ${{ github.repository_owner }}
+        run: python3 scripts/generate_repo_cards.py
+
+      - name: Commit whatever changed
+        run: |
+          FILES="stats.svg streak.svg langs.svg visits.svg hd-*.svg card-*.svg"
+          if [ -z "$(git status --porcelain -- $FILES)" ]; then
+            echo "no change"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- $FILES
+          git commit -m "stats: refresh profile graphics"
+          git pull --rebase
+          git push
