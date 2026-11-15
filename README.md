@@ -3,8 +3,8 @@
 <!--
   ░░ HEADER SWITCH ░░
   Only one of the two blocks below should be uncommented at a time.
-  MODE 0 (ASCII banner)  — currently OFF
-  MODE 1 (Image banner)  — currently ON
+  MODE 0 (ASCII banner)  — currently ON
+  MODE 1 (Image banner)  — currently OFF
   To switch: comment out the block you don't want, uncomment the other.
 -->
 
