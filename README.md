@@ -21,8 +21,8 @@
 <br/>
 
 <!--QUOTE_START-->
-> *"Talk is cheap. Show me the code."*
-> — **Linus Torvalds**
+> *"Optimism is an occupational hazard of programming; feedback is the treatment."*
+> — **Kent Beck**
 <!--QUOTE_END-->
 
 </div>
