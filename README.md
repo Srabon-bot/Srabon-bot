@@ -21,8 +21,8 @@
 <br/>
 
 <!--QUOTE_START-->
-> *"Software is eating the world."*
-> — **Marc Andreessen**
+> *"Talk is cheap. Show me the code."*
+> — **Linus Torvalds**
 <!--QUOTE_END-->
 
 </div>
