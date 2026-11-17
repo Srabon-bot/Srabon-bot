@@ -21,8 +21,8 @@
 <br/>
 
 <!--QUOTE_START-->
-> *"Optimism is an occupational hazard of programming; feedback is the treatment."*
-> — **Kent Beck**
+> *"Artificial intelligence is the new electricity."*
+> — **Andrew Ng**
 <!--QUOTE_END-->
 
 </div>
