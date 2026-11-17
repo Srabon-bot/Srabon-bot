@@ -21,8 +21,8 @@
 <br/>
 
 <!--QUOTE_START-->
-> *"Artificial intelligence is the new electricity."*
-> — **Andrew Ng**
+> *"Software is eating the world."*
+> — **Marc Andreessen**
 <!--QUOTE_END-->
 
 </div>
