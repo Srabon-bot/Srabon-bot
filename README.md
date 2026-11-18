@@ -21,8 +21,8 @@
 <br/>
 
 <!--QUOTE_START-->
-> *"Software is eating the world."*
-> — **Marc Andreessen**
+> *"The best way to predict the future is to invent it."*
+> — **Alan Kay**
 <!--QUOTE_END-->
 
 </div>
