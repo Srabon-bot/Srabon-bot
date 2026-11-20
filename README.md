@@ -21,8 +21,8 @@
 <br/>
 
 <!--QUOTE_START-->
-> *"Make it work, make it right, make it fast."*
-> — **Kent Beck**
+> *"Artificial intelligence is the new electricity."*
+> — **Andrew Ng**
 <!--QUOTE_END-->
 
 </div>
