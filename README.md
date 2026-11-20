@@ -43,11 +43,11 @@ Hi! I'm **Shahriar Srabon**, a full-stack developer who builds web apps from UI 
 ### 🔭 Currently working on
 
 <!--START-->
+- [yard-club-server](https://github.com/Srabon-bot/yard-club-server) - no description yet
 - [yard-club-client](https://github.com/Srabon-bot/yard-club-client) - no description yet
 - [portfolio](https://github.com/Srabon-bot/portfolio) - Dark purple full-stack MERN developer portfolio with a private admin dashboard. Built with Next.js, TypeScript, Tailwind, Express and MongoDB.
 - [HireloopClient](https://github.com/Srabon-bot/HireloopClient) - no description yet
 - [Aquaguard](https://github.com/Srabon-bot/Aquaguard) - ml,web,iot
-- [tasks](https://github.com/Srabon-bot/tasks) - Practice tasks i do everyday for web dev
 <!--END-->
 
 ---
