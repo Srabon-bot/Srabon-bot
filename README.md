@@ -21,8 +21,8 @@
 <br/>
 
 <!--QUOTE_START-->
-> *"All models are wrong, but some are useful."*
-> — **George E. P. Box**
+> *"Programs must be written for people to read, and only incidentally for machines to execute."*
+> — **Harold Abelson**
 <!--QUOTE_END-->
 
 </div>
