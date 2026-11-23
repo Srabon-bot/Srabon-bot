@@ -21,8 +21,8 @@
 <br/>
 
 <!--QUOTE_START-->
-> *"Premature optimization is the root of all evil."*
-> — **Donald Knuth**
+> *"Artificial intelligence is the new electricity."*
+> — **Andrew Ng**
 <!--QUOTE_END-->
 
 </div>
