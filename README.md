@@ -21,8 +21,8 @@
 <br/>
 
 <!--QUOTE_START-->
-> *"Programs must be written for people to read, and only incidentally for machines to execute."*
-> — **Harold Abelson**
+> *"Artificial intelligence is the new electricity."*
+> — **Andrew Ng**
 <!--QUOTE_END-->
 
 </div>
