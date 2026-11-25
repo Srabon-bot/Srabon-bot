@@ -21,8 +21,8 @@
 <br/>
 
 <!--QUOTE_START-->
-> *"Neural nets are not 'just curve fitting'. They are 'just' curve fitting."*
-> — **Andrej Karpathy**
+> *"Programs must be written for people to read, and only incidentally for machines to execute."*
+> — **Harold Abelson**
 <!--QUOTE_END-->
 
 </div>
