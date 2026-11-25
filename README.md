@@ -43,9 +43,9 @@ Hi! I'm **Shahriar Srabon**, a full-stack developer who builds web apps from UI 
 ### 🔭 Currently working on
 
 <!--START-->
+- [portfolio](https://github.com/Srabon-bot/portfolio) - Dark purple full-stack MERN developer portfolio with a private admin dashboard. Built with Next.js, TypeScript, Tailwind, Express and MongoDB.
 - [yard-club-client](https://github.com/Srabon-bot/yard-club-client) - Equipment rental marketplace frontend built with Next.js 16 App Router, React 19, and Tailwind CSS 4. Features server-side search, Stripe checkout, role-based dashboards (renter, owner, admin), and Better Auth with JWKS security.
 - [yard-club-server](https://github.com/Srabon-bot/yard-club-server) - REST API for the Yardclub equipment rental marketplace built with Express 5, TypeScript, and MongoDB Atlas. Features native aggregation search pipelines, Stripe webhooks, JWT/JWKS RBAC security, and automated booking lifecycle sweeps.
-- [portfolio](https://github.com/Srabon-bot/portfolio) - Dark purple full-stack MERN developer portfolio with a private admin dashboard. Built with Next.js, TypeScript, Tailwind, Express and MongoDB.
 - [HireloopClient](https://github.com/Srabon-bot/HireloopClient) - no description yet
 - [Aquaguard](https://github.com/Srabon-bot/Aquaguard) - ml,web,iot
 <!--END-->
