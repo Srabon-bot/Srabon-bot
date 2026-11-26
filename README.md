@@ -21,8 +21,8 @@
 <br/>
 
 <!--QUOTE_START-->
-> *"All models are wrong, but some are useful."*
-> — **George E. P. Box**
+> *"Premature optimization is the root of all evil."*
+> — **Donald Knuth**
 <!--QUOTE_END-->
 
 </div>
