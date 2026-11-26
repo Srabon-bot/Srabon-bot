@@ -21,8 +21,8 @@
 <br/>
 
 <!--QUOTE_START-->
-> *"Artificial intelligence is the new electricity."*
-> — **Andrew Ng**
+> *"All models are wrong, but some are useful."*
+> — **George E. P. Box**
 <!--QUOTE_END-->
 
 </div>
