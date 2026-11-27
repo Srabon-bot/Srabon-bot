@@ -73,6 +73,11 @@ Hi! I'm **Shahriar Srabon**, a full-stack developer who builds web apps from UI 
 [![React Hook Form](https://img.shields.io/badge/React_Hook_Form-EC5990?style=for-the-badge&logo=reacthookform&logoColor=white)](https://react-hook-form.com/)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)](https://www.framer.com/motion/)
+[![Recharts](https://img.shields.io/badge/Recharts-FF6B35?style=for-the-badge)](https://recharts.org/)
+[![Sonner](https://img.shields.io/badge/Sonner-F59E0B?style=for-the-badge)](https://sonner.emilkowal.ski/)
+[![Lucide React](https://img.shields.io/badge/Lucide-F56565?style=for-the-badge&logo=lucide&logoColor=white)](https://lucide.dev/)
+[![Embla Carousel](https://img.shields.io/badge/Embla_Carousel-8A4FFF?style=for-the-badge)](https://www.embla-carousel.com/)
 
 **Backend, Database & Auth**
 
@@ -83,6 +88,9 @@ Hi! I'm **Shahriar Srabon**, a full-stack developer who builds web apps from UI 
 [![Better Auth](https://img.shields.io/badge/Better_Auth-000000?style=for-the-badge)](https://www.better-auth.com/)
 [![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)](https://jwt.io/)
 [![Zod](https://img.shields.io/badge/Zod-3068B7?style=for-the-badge&logo=zod&logoColor=white)](https://zod.dev/)
+[![Stripe](https://img.shields.io/badge/Stripe-635BFF?style=for-the-badge&logo=stripe&logoColor=white)](https://stripe.com/)
+[![JWKS](https://img.shields.io/badge/JWKS-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)](https://jwt.io/)
+[![OAuth](https://img.shields.io/badge/OAuth-2.0-EA4335?style=for-the-badge)](https://oauth.net/2/)
 
 **Tools & Deployment**
 
@@ -93,6 +101,7 @@ Hi! I'm **Shahriar Srabon**, a full-stack developer who builds web apps from UI 
 [![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)](https://eslint.org/)
 [![Biome](https://img.shields.io/badge/Biome-60A5FA?style=for-the-badge&logo=biome&logoColor=white)](https://biomejs.dev/)
 [![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://www.linux.org/)
+[![node-cron](https://img.shields.io/badge/node--cron-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://github.com/node-cron/node-cron)
 
 **Machine Learning & Data Science**
 
