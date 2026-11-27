@@ -21,8 +21,8 @@
 <br/>
 
 <!--QUOTE_START-->
-> *"All models are wrong, but some are useful."*
-> — **George E. P. Box**
+> *"Talk is cheap. Show me the code."*
+> — **Linus Torvalds**
 <!--QUOTE_END-->
 
 </div>
