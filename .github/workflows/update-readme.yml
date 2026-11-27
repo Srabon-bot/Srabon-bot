@@ -32,10 +32,11 @@ jobs:
           # Authenticated so we are not at the mercy of the shared runner IP's
           # 60/hour anonymous limit, but keep the list to PUBLIC repos: this
           # README is public, so private repo names must not leak into it.
+          # Keep only the two most recently pushed public repos.
           jq -r --arg owner "$OWNER" '
             if type != "array" then error("unexpected GitHub API response") else . end
             | map(select(.private == false and .name != $owner))
-            | .[0:5][]
+            | .[0:2][]
             | "- [\(.name)](\(.html_url)) - \(.description // "no description yet")"
           ' repos.json > list.md
           rm -f repos.json
