@@ -31,14 +31,14 @@
 
 ## 👋 About Me
 
-Hi! I'm **Shahriar Srabon**, a full-stack developer who builds web apps from UI to database, with a growing focus on **Machine Learning** and **Data Science**. I like working on real-world problems, especially in hydrology, environmental science, and intelligent systems.
+Hi! I'm **Shahriar Srabon**, a full-stack developer who builds web apps from UI to database, with a growing focus on Machine Learning and Data Science. I like working on real-world problems, especially in hydrology, environmental science, and intelligent systems.
 
-- 🌱 Building full-stack apps with **Next.js**, Node, and modern web tooling
-- 🧠 Exploring **deep learning** for hydrological forecasting and flood risk
-- 💡 Interested in **open-source contributions** and collaborative research
-- 📍 Based in **Dhaka, Bangladesh**
-- 🌐 Portfolio: **[portfolio2-0-seven-liart.vercel.app](https://portfolio2-0-seven-liart.vercel.app/)**
-- 📬 Reach me at: **srabon361@gmail.com**
+- 🌱 Building full-stack apps with Next.js, Node, and modern web tooling
+- 🧠 Exploring deep learning for hydrological forecasting and flood risk
+- 💡 Interested in open-source contributions and collaborative research
+- 📍 Based in Dhaka, Bangladesh
+- 🌐 Portfolio: [portfolio2-0-seven-liart.vercel.app](https://portfolio2-0-seven-liart.vercel.app/)
+- 📬 Reach me at: srabon361@gmail.com
 
 ### 🔭 Currently working on
 
