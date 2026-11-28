@@ -21,8 +21,8 @@
 <br/>
 
 <!--QUOTE_START-->
-> *"All models are wrong, but some are useful."*
-> — **George E. P. Box**
+> *"Any fool can write code that a computer can understand. Good programmers write code that humans can understand."*
+> — **Martin Fowler**
 <!--QUOTE_END-->
 
 </div>
